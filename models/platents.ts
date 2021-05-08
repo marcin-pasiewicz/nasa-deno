@@ -30,7 +30,7 @@ import {
     const bufReader = new BufReader(file);
   
     const result = await parse(bufReader, {
-      header: true,
+      skipFirstRow: true,
       comment: "#",
     });
   
